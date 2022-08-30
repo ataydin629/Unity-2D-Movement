@@ -3,7 +3,7 @@
 
     float horizontal;
     float vertical;
-
+     float passedMeters;
     public float runSpeed = 10.0f;
 
 
@@ -18,6 +18,7 @@
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        passedMeters += 10;
     }
 
     private void FixedUpdate()
